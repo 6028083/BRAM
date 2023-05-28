@@ -1,0 +1,68 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="#FFF8E9" />
+        </shape>
+    </item>
+
+    <item
+    android:left="0dp"
+    android:right="0dp"
+    android:top="150dp"
+    android:bottom="900dp">
+    <rotate
+        android:fromDegrees="30"
+        android:pivotX="0%"
+        android:pivotY="0%">
+        <shape>
+            <solid android:color="#E9F0FF" />
+        </shape>
+    </rotate>
+</item>
+
+    <item
+        android:left="0dp"
+        android:right="0dp"
+        android:top="150dp"
+        android:bottom="900dp">
+        <rotate
+            android:fromDegrees="30"
+            android:pivotX="-14.5%"
+            android:pivotY="300%">
+            <shape>
+                <solid android:color="#E9F0FF" />
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:left="0dp"
+        android:right="0dp"
+        android:top="375dp"
+        android:bottom="675dp">
+        <rotate
+            android:fromDegrees="30"
+            android:pivotX="0%"
+            android:pivotY="0%">
+            <shape>
+                <solid android:color="#E9F0FF" />
+            </shape>
+        </rotate>
+    </item>
+
+    <item
+        android:left="0dp"
+        android:right="0dp"
+        android:top="375dp"
+        android:bottom="675dp">
+        <rotate
+            android:fromDegrees="30"
+            android:pivotX="-13.5%"
+            android:pivotY="275%">
+            <shape>
+                <solid android:color="#E9F0FF" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
