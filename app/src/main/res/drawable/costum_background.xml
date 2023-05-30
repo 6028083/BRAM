@@ -11,14 +11,15 @@
     android:right="0dp"
     android:top="150dp"
     android:bottom="900dp">
-    <rotate
-        android:fromDegrees="30"
-        android:pivotX="0%"
-        android:pivotY="0%">
-        <shape>
-            <solid android:color="#E9F0FF" />
-        </shape>
-    </rotate>
+        <rotate
+            android:layout_height="wrap_content"
+            android:fromDegrees="30"
+            android:pivotX="0%"
+            android:pivotY="0%">
+            <shape>
+                <solid android:color="#E9F0FF" />
+            </shape>
+        </rotate>
 </item>
 
     <item
