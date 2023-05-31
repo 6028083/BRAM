@@ -6,57 +6,136 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-   <ImageView
-       android:id="@+id/imageView"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:contentDescription="Achtergrond"
-       android:src="@drawable/costum_background"
-       app:layout_constraintStart_toStartOf="parent"
-       tools:layout_editor_absoluteY="-74dp"></ImageView>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Achtergrond"
+        android:src="@drawable/costum_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
 
-   <ImageView
-       android:id="@+id/logoImageView"
-       android:layout_width="125dp"
-       android:layout_height="125dp"
-       android:layout_alignParentStart="true"
-       android:layout_alignParentTop="true"
-       android:layout_marginStart="10dp"
-       android:layout_marginTop="10dp"
-       android:contentDescription="Logo van mijn app"
-       android:src="@drawable/bram_logo"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="150dp"
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Logo van mijn app"
+        android:src="@drawable/bram_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="200dp"
-        android:background="@drawable/square_background"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|top"
-            android:text="Woonkamer" />
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/square_background">
 
-        <ImageView
-            android:id="@+id/image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center"
-            android:src="@drawable/switch_selector" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:text="Woonkamer"
+                android:layout_marginTop="10dp"
+                android:textSize="35sp"
+                android:textStyle="bold"/>
 
-        <Switch
-            android:id="@+id/switch_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="110dp"
-            android:layout_gravity="center_horizontal|bottom"
-            android:checked="false" />
-    </FrameLayout>
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:src="@drawable/switch_selector" />
 
+            <Switch
+                android:id="@+id/switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginTop="110dp"
+                android:checked="false" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/square_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:text="Toilet"
+                android:layout_marginTop="10dp"
+                android:textSize="35sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/image_view_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:src="@drawable/switch_selector" />
+
+            <Switch
+                android:id="@+id/switch_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginTop="110dp"
+                android:checked="false" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/square_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:text="Slaapkamer"
+                android:layout_marginTop="10dp"
+                android:textSize="35sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/image_view_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:src="@drawable/switch_selector" />
+
+            <Switch
+                android:id="@+id/switch_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginTop="110dp"
+                android:checked="false" />
+        </FrameLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
