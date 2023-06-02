@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
+import android.view.View;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
     private Switch switchButton;
@@ -17,7 +19,14 @@ public class MainActivity extends AppCompatActivity {
 
         switchButton = findViewById(R.id.switch_button);
         imageView = findViewById(R.id.image_view);
-
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start the new activity
+                Intent intent = new Intent(MainActivity.this, lichten_woonkamer.class);
+                startActivity(intent);
+            }
+        });
         switchButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
