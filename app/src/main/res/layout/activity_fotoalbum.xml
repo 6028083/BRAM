@@ -6,23 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".fotoalbum">
 
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="Achtergrond"
         android:src="@drawable/costum_background"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="125dp"
         android:layout_height="125dp"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:contentDescription="Logo van mijn app"
@@ -40,7 +35,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="25dp"
-        android:layout_marginStart="25dp"/>
+        android:layout_marginStart="25dp" />
 
     <ImageView
         android:id="@+id/sosImageView"
@@ -53,8 +48,32 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="25dp"/>
+        android:layout_marginBottom="25dp" />
 
+    <ImageView
+        android:id="@+id/plus_knop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/add_knop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="600dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="100dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/familie_foto" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
