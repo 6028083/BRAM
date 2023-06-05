@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -32,110 +31,175 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="20dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:textColor="#707070"
+        android:layout_gravity="center_horizontal|top"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textColor="#707070"/>
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/batterij" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="225dp"
+        android:orientation="horizontal">
         <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="300dp"
-            android:layout_marginEnd="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/square_background">
+            android:id="@+id/lichten_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/lichten_square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Achtergrond"
+                android:src="@drawable/lichten_square" />
+
+            <ImageView
+                android:id="@+id/lamp_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="Achtergrond"
+                android:src="@drawable/lamp_home" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|top"
-                android:text="Woonkamer"
-                android:layout_marginTop="10dp"
-                android:textSize="35sp"
-                android:textStyle="bold"/>
-
-            <ImageView
-                android:id="@+id/image_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center"
-                android:src="@drawable/switch_selector" />
-
-            <Switch
-                android:id="@+id/switch_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginTop="110dp"
-                android:checked="false" />
+                android:text="Lichten"
+                android:layout_marginBottom="10dp"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
 
         </FrameLayout>
-
         <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="300dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/square_background">
+            android:id="@+id/contacten_home_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/contact_square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Achtergrond"
+                android:src="@drawable/contact_square" />
+
+            <ImageView
+                android:id="@+id/contact_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="Achtergrond"
+                android:src="@drawable/contact_home" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|top"
-                android:text="Toilet"
-                android:layout_marginTop="10dp"
-                android:textSize="35sp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="Contacten"
+                android:layout_marginBottom="10dp"
+                android:textSize="50sp"
                 android:textStyle="bold"/>
 
-            <ImageView
-                android:id="@+id/image_view_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center"
-                android:src="@drawable/switch_selector" />
-
-            <Switch
-                android:id="@+id/switch_button_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginTop="110dp"
-                android:checked="false" />
         </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="625dp"
+        android:orientation="horizontal">
 
         <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="300dp"
-            android:layout_marginStart="20dp"
-            android:layout_weight="1"
-            android:background="@drawable/square_background">
+            android:id="@+id/thermo_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/verwaming_square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Achtergrond"
+                android:src="@drawable/verwarming_square" />
+
+            <ImageView
+                android:id="@+id/thermometer_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="Achtergrond"
+                android:src="@drawable/thermometer_home" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|top"
-                android:text="Slaapkamer"
-                android:layout_marginTop="10dp"
-                android:textSize="35sp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="Verwarming"
+                android:layout_marginBottom="10dp"
+                android:textSize="50sp"
                 android:textStyle="bold"/>
 
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/foto_home_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+
             <ImageView
-                android:id="@+id/image_view_3"
+                android:id="@+id/fotoalbum_square"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center"
-                android:src="@drawable/switch_selector" />
+                android:contentDescription="Achtergrond"
+                android:src="@drawable/fotoalbum_square" />
 
-            <Switch
-                android:id="@+id/switch_button_3"
+            <ImageView
+                android:id="@+id/foto_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:contentDescription="Achtergrond"
+                android:src="@drawable/foto_home" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginTop="110dp"
-                android:checked="false" />
+                android:text="Fotoalbum"
+                android:layout_marginBottom="10dp"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
         </FrameLayout>
     </LinearLayout>
 </RelativeLayout>
