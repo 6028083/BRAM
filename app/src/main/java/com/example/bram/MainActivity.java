@@ -112,6 +112,5 @@ public class MainActivity extends AppCompatActivity {
         handler.post(updateTimeRunnable);
         handler.post(updateDateRunnable);
 
-
     }
 }
