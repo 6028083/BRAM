@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Start the new activity
-                Intent intent = new Intent(MainActivity.this, fotoalbum.class);
+                Intent intent = new Intent(MainActivity.this, lichten_toilet.class);
                 startActivity(intent);
             }
         });

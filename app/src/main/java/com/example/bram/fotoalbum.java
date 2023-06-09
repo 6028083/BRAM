@@ -38,8 +38,8 @@ public class fotoalbum extends Activity {
         ImageView terug = findViewById(R.id.terug_knop);
 
         terug.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View v) {
+    @Override
+    public void onClick(View v) {
         Intent intent = new Intent(fotoalbum.this, MainActivity.class);
         startActivity(intent);
         }
@@ -68,6 +68,3 @@ public void onClick(View v) {
         }
     }
 }
-
-
-//////////////////////////////////

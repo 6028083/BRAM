@@ -258,16 +258,5 @@
         </LinearLayout>
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="11dp"
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_add"
-        android:scaleX="2"
-        android:scaleY="2"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
