@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageView imageView;
 
-    private FrameLayout frameLayout;
-
+    private FrameLayout lichten;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,32 +44,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //////////
-        contact.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start the new activity
-                Intent intent = new Intent(MainActivity.this, fotoalbum.class);
-                startActivity(intent);
-            }
-        });
+//        contact.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Start the new activity
+//                Intent intent = new Intent(MainActivity.this, fotoalbum.class);
+//                startActivity(intent);
+//            }
+//        });
         ///////////
-        thermo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start the new activity
-                Intent intent = new Intent(MainActivity.this, fotoalbum.class);
-                startActivity(intent);
-            }
-        });
+//        thermo.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Start the new activity
+//                Intent intent = new Intent(MainActivity.this, fotoalbum.class);
+//                startActivity(intent);
+//            }
+//        });
         /////////
-        foto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start the new activity
-                Intent intent = new Intent(MainActivity.this, fotoalbum.class);
-                startActivity(intent);
-            }
-        });
+//        foto.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Start the new activity
+//                Intent intent = new Intent(MainActivity.this, fotoalbum.class);
+//                startActivity(intent);
+//            }
+//        });
 ///////////
         timeTextView = findViewById(R.id.timeTextView);
         dateTextView = findViewById(R.id.dateTextView);
