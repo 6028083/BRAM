@@ -1,6 +1,8 @@
 package com.example.bram;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.CompoundButton;
 import android.widget.FrameLayout;
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         FrameLayout contact = findViewById(R.id.contacten_home_view);
         FrameLayout thermo = findViewById(R.id.thermo_home);
         FrameLayout foto = findViewById(R.id.foto_home_view);
+
         lichten.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 // Get the current time
                 Calendar calendar = Calendar.getInstance();
-                SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
+                @SuppressLint("SimpleDateFormat") SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
                 String currentTime = timeFormat.format(calendar.getTime());
 
                 // Update the TextView with the current time
