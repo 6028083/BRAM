@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Start the new activity
-                Intent intent = new Intent(MainActivity.this, fotoalbum.class);
+                Intent intent = new Intent(MainActivity.this, Activity_Contacten.class);
                 startActivity(intent);
             }
         });
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Start the new activity
-                Intent intent = new Intent(MainActivity.this, fotoalbum.class);
+                Intent intent = new Intent(MainActivity.this, lichten_slaapkamer.class);
                 startActivity(intent);
             }
         });

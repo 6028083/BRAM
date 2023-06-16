@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditContactDoktorActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Achtergrond"
+        android:src="@drawable/costum_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Logo van mijn app"
+        android:src="@drawable/bram_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="450dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="313dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/dokterImageView_img"
+            android:layout_width="174dp"
+            android:layout_height="174dp"
+            android:src="@drawable/doctor"
+            android:contentDescription="Doctor"/>
+
+        <TextView
+            android:id="@+id/doctor_text"
+            android:textColor="#2B669B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="170dp"
+            android:text="Doctor"/>
+
+        <TextView
+            android:id="@+id/wijzig_text"
+            android:textColor="#2B669B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="360dp"
+            android:layout_marginTop="30dp"
+            android:text="Wijzig"/>
+    </FrameLayout>
+
+
+<FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_bericht_icoon"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="Foto van een bericht"
+            android:src="@drawable/bericht_icoon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bericht_text"
+            android:textColor="#2B669B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="100dp"
+            android:text="Bericht"/>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_mobile_icoon"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="Foto van een mobile"
+            android:src="@drawable/mobile_icoon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mobile_text"
+            android:textColor="#2B669B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="100dp"
+            android:text="Bellen"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="570dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_facetime_icoon"
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="Foto van een mobile"
+            android:src="@drawable/facetime_icoon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/facetime_text"
+            android:textColor="#2B669B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="110dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:text="Facetime"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="640dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="447dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/telefoonnummer_text"
+            android:textColor="#2B669B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="Telefoonnummer"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="640dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="585dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/familie_text"
+            android:textColor="#2B669B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Zet in familie"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="640dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="688dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/belangrijk_text"
+            android:textColor="#2B669B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Zet in belangrijk"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="640dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="791dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/favoriete_text"
+            android:textColor="#2B669B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Zet in favoriete"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="640dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="894dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/locatie_text"
+            android:textColor="#2B669B"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Deel mijn locatie"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="640dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="997dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/blokkeer_text"
+            android:textColor="#F83737"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="300dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Blokkeer deze beller"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="1080dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/terug_knop"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal|fill_horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="24dp"
+        android:contentDescription="Pijl naar links"
+        android:src="@drawable/terug_knop" />
+
+        <ImageView
+            android:id="@+id/sosImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

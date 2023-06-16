@@ -1,10 +1,20 @@
 package com.example.bram;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.content.Intent;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class lichten_toilet extends AppCompatActivity {
     private Switch switchButton_1;
@@ -106,5 +116,6 @@ public class lichten_toilet extends AppCompatActivity {
                 }
             }
         });
+
     }
 }

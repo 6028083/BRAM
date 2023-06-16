@@ -154,8 +154,8 @@
 
             <ImageView
                 android:id="@+id/thermometer_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="151dp"
+                android:layout_height="222dp"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:contentDescription="Achtergrond"
                 android:src="@drawable/thermometer_home" />

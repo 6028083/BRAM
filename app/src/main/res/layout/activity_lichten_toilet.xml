@@ -257,6 +257,34 @@
             </FrameLayout>
         </LinearLayout>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="1080dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/terug_knop"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal|fill_horizontal"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="Pijl naar links"
+            android:src="@drawable/terug_knop" />
+
+        <ImageView
+            android:id="@+id/sosImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/sos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
