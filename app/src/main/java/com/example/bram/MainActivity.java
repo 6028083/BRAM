@@ -26,16 +26,28 @@ public class MainActivity extends AppCompatActivity {
 
     private FrameLayout frameLayout;
 
+    private ImageView sosImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-////////
+
+
+        sosImageView = findViewById(R.id.sosImageView);
+        sosImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, EditContactDoktorActivity.class); // Vervang "NieuwePagina" door de naam van je gewenste nieuwe pagina-activiteit
+                startActivity(intent);
+            }
+        });
+
         FrameLayout lichten = findViewById(R.id.lichten_home);
         FrameLayout contact = findViewById(R.id.contacten_home_view);
         FrameLayout thermo = findViewById(R.id.thermo_home);
         FrameLayout foto = findViewById(R.id.foto_home_view);
+
         lichten.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        //////////
+
         contact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ///////////
+
         thermo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        /////////
+
         foto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-///////////
+
         timeTextView = findViewById(R.id.timeTextView);
         dateTextView = findViewById(R.id.dateTextView);
         handler = new Handler();
@@ -111,6 +123,5 @@ public class MainActivity extends AppCompatActivity {
         // Start the initial updates for time and date
         handler.post(updateTimeRunnable);
         handler.post(updateDateRunnable);
-
     }
 }

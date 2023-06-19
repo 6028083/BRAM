@@ -14,10 +14,14 @@ import com.example.bram.R;
 import android.graphics.Bitmap;
 import androidx.cardview.widget.CardView;
 
+
 public class fotoalbum extends Activity {
     private static final int REQUEST_IMAGE_PICK = 100;
     private ImageView photoAlbumImageView;
     private ImageView plusKnop;
+
+    private ImageView sosImageView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,15 @@ public class fotoalbum extends Activity {
         });
         ImageView terug = findViewById(R.id.terug_knop);
 
+        sosImageView = findViewById(R.id.sosImageView);
+        sosImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(fotoalbum.this, EditContactDoktorActivity.class); // Vervang "NieuwePagina" door de naam van je gewenste nieuwe pagina-activiteit
+                startActivity(intent);
+            }
+        });
+
         terug.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
@@ -45,6 +58,7 @@ public class fotoalbum extends Activity {
         }
         });
     }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

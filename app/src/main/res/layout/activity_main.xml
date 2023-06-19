@@ -204,13 +204,14 @@
 
     <ImageView
         android:id="@+id/sosImageView"
-        android:layout_width="wrap_content"
+        android:layout_width="195dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_gravity="center_vertical|center"
-        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="0dp"
         android:src="@drawable/sos"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </RelativeLayout>

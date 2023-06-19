@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class lichten_slaapkamer extends AppCompatActivity {
-
+    private ImageView sosImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,14 @@ public class lichten_slaapkamer extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(lichten_slaapkamer.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        sosImageView = findViewById(R.id.sosImageView);
+        sosImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(lichten_slaapkamer.this, EditContactDoktorActivity.class); // Vervang "NieuwePagina" door de naam van je gewenste nieuwe pagina-activiteit
                 startActivity(intent);
             }
         });
