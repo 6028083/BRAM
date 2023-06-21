@@ -10,10 +10,10 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="Achtergrond"
+        android:contentDescription="@string/achtergrond"
         android:src="@drawable/costum_background"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/logoImageView"
@@ -23,7 +23,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:contentDescription="Logo van mijn app"
+        android:contentDescription="@string/logo_van_mijn_app"
         android:src="@drawable/bram_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -63,7 +63,8 @@
         android:layout_gravity="center_horizontal|center"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/batterij" />
+        android:src="@drawable/batterij"
+        android:contentDescription="@string/batterij" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -74,13 +75,13 @@
             android:id="@+id/lichten_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="15dp">
+            android:layout_marginEnd="15dp">
 
             <ImageView
                 android:id="@+id/lichten_square"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="Achtergrond"
+                android:contentDescription="@string/achtergrond"
                 android:src="@drawable/lichten_square" />
 
             <ImageView
@@ -88,14 +89,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:contentDescription="Achtergrond"
+                android:contentDescription="@string/achtergrond"
                 android:src="@drawable/lamp_home" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:text="Lichten"
+                android:text="@string/lichten"
                 android:layout_marginBottom="10dp"
                 android:textSize="50sp"
                 android:textStyle="bold"/>
@@ -105,13 +106,13 @@
             android:id="@+id/contacten_home_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp">
+            android:layout_marginStart="15dp">
 
             <ImageView
                 android:id="@+id/contact_square"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="Achtergrond"
+                android:contentDescription="@string/groen_achtergrond"
                 android:src="@drawable/contact_square" />
 
             <ImageView
@@ -119,14 +120,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:contentDescription="Achtergrond"
+                android:contentDescription="@string/icoon_contact"
                 android:src="@drawable/contact_home" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:text="Contacten"
+                android:text="@string/contacten"
                 android:layout_marginBottom="10dp"
                 android:textSize="50sp"
                 android:textStyle="bold"/>
@@ -143,13 +144,13 @@
             android:id="@+id/thermo_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="15dp">
+            android:layout_marginEnd="15dp">
 
             <ImageView
                 android:id="@+id/verwaming_square"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="Achtergrond"
+                android:contentDescription="@string/zalm_achtergrond"
                 android:src="@drawable/verwarming_square" />
 
             <ImageView
@@ -157,14 +158,14 @@
                 android:layout_width="151dp"
                 android:layout_height="222dp"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:contentDescription="Achtergrond"
+                android:contentDescription="@string/thermo"
                 android:src="@drawable/thermometer_home" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:text="Verwarming"
+                android:text="@string/verwarming"
                 android:layout_marginBottom="10dp"
                 android:textSize="50sp"
                 android:textStyle="bold"/>
@@ -174,13 +175,13 @@
             android:id="@+id/foto_home_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp">
+            android:layout_marginStart="15dp">
 
             <ImageView
                 android:id="@+id/fotoalbum_square"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="Achtergrond"
+                android:contentDescription="@string/roze_achtergrond"
                 android:src="@drawable/fotoalbum_square" />
 
             <ImageView
@@ -188,14 +189,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:contentDescription="Achtergrond"
+                android:contentDescription="@string/foto_icoon"
                 android:src="@drawable/foto_home" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:text="Fotoalbum"
+                android:text="@string/fotoalbum"
                 android:layout_marginBottom="10dp"
                 android:textSize="50sp"
                 android:textStyle="bold"/>
@@ -204,14 +205,17 @@
 
     <ImageView
         android:id="@+id/sosImageView"
-        android:layout_width="195dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="25dp"
         android:src="@drawable/sos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/terug_knop"
+        android:contentDescription="@string/sosknop"
+        tools:ignore="UnknownIdInLayout" />
 
 </RelativeLayout>

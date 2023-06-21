@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".specifieke_ruimte">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="Achtergrond"
+        android:contentDescription="@string/achtergrond"
         android:src="@drawable/costum_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
         android:layout_alignParentTop="false"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:contentDescription="Logo van mijn app"
+        android:contentDescription="@string/logo_van_mijn_app"
         android:src="@drawable/bram_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,12 +34,48 @@
         android:layout_width="175dp"
         android:layout_height="175dp"
         android:layout_gravity="center_horizontal|fill_horizontal"
-        android:contentDescription="Pijl naar links"
+        android:contentDescription="@string/pijl_naar_links"
         android:src="@drawable/terug_knop"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="25dp"
         android:layout_marginStart="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/woonkamer"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/logoImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/plus_knop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/add_knop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/plusje" />
+
+    <ImageView
+        android:id="@+id/sosImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/sos"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/terug_knop"
+        android:contentDescription="@string/sosknop" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,9 +91,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false">
 
             <FrameLayout
+                android:id="@+id/woonkamerPagina"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="20dp"
@@ -68,7 +106,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|top"
-                    android:text="Woonkamer"
+                    android:text="@string/hoofdlamp"
                     android:textSize="35sp"
                     android:textStyle="bold" />
 
@@ -80,14 +118,16 @@
                     android:layout_marginTop="100dp"
                     android:checked="false"
                     android:scaleX="2"
-                    android:scaleY="2" />
+                    android:scaleY="2"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
 
                 <ImageView
                     android:id="@+id/image_view_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center"
-                    android:src="@drawable/switch_selector" />
+                    android:src="@drawable/switch_selector"
+                    android:contentDescription="@string/lamp_uit" />
             </FrameLayout>
 
             <FrameLayout
@@ -102,7 +142,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|top"
-                    android:text="Toilet"
+                    android:text="@string/muurlamp_1"
                     android:layout_marginTop="10dp"
                     android:textSize="35sp"
                     android:textStyle="bold"/>
@@ -112,7 +152,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center"
-                    android:src="@drawable/switch_selector" />
+                    android:src="@drawable/switch_selector"
+                    android:contentDescription="@string/lamp_uit" />
 
                 <Switch
                     android:id="@+id/switch_button_2"
@@ -122,7 +163,8 @@
                     android:layout_marginTop="110dp"
                     android:checked="false"
                     android:scaleX="2"
-                    android:scaleY="2" />
+                    android:scaleY="2"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
             </FrameLayout>
 
             <FrameLayout
@@ -136,7 +178,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|top"
-                    android:text="Muur"
+                    android:text="@string/muurlamp_2"
                     android:layout_marginTop="10dp"
                     android:textSize="35sp"
                     android:textStyle="bold"/>
@@ -146,7 +188,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center"
-                    android:src="@drawable/switch_selector" />
+                    android:src="@drawable/switch_selector"
+                    android:contentDescription="@string/lamp_uit" />
 
                 <Switch
                     android:id="@+id/switch_button_3"
@@ -156,7 +199,8 @@
                     android:layout_marginTop="110dp"
                     android:checked="false"
                     android:scaleX="2"
-                    android:scaleY="2" />
+                    android:scaleY="2"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
             </FrameLayout>
 
         </LinearLayout>
@@ -164,7 +208,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:baselineAligned="false">
 
             <FrameLayout
                 android:layout_width="0dp"
@@ -177,7 +222,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|top"
-                    android:text="Button 4"
+                    android:text="@string/hoek_lamp"
                     android:textSize="35sp"
                     android:textStyle="bold" />
 
@@ -189,14 +234,16 @@
                     android:layout_marginTop="100dp"
                     android:checked="false"
                     android:scaleX="2"
-                    android:scaleY="2" />
+                    android:scaleY="2"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
 
                 <ImageView
                     android:id="@+id/image_view_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center"
-                    android:src="@drawable/switch_selector" />
+                    android:src="@drawable/switch_selector"
+                    android:contentDescription="@string/lamp_uit" />
             </FrameLayout>
 
             <FrameLayout
@@ -211,7 +258,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|top"
-                    android:text="Button 5"
+                    android:text="@string/lamp_bij_bank"
                     android:layout_marginTop="10dp"
                     android:textSize="35sp"
                     android:textStyle="bold"/>
@@ -221,7 +268,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center"
-                    android:src="@drawable/switch_selector" />
+                    android:src="@drawable/switch_selector"
+                    android:contentDescription="@string/lamp_uit" />
 
                 <Switch
                     android:id="@+id/switch_button_5"
@@ -231,7 +279,8 @@
                     android:layout_marginTop="110dp"
                     android:checked="false"
                     android:scaleX="2"
-                    android:scaleY="2" />
+                    android:scaleY="2"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
             </FrameLayout>
 
             <FrameLayout
@@ -245,7 +294,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|top"
-                    android:text="Button 6"
+                    android:text="@string/lamp_gang"
                     android:layout_marginTop="10dp"
                     android:textSize="35sp"
                     android:textStyle="bold"/>
@@ -255,7 +304,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|center"
-                    android:src="@drawable/switch_selector" />
+                    android:src="@drawable/switch_selector"
+                    android:contentDescription="@string/lamp_uit" />
 
                 <Switch
                     android:id="@+id/switch_button_6"
@@ -265,37 +315,10 @@
                     android:layout_marginTop="110dp"
                     android:checked="false"
                     android:scaleX="2"
-                    android:scaleY="2" />
+                    android:scaleY="2"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
             </FrameLayout>
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="800dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="1060dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/terug_knop"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="10dp"
-            android:contentDescription="Pijl naar links"
-            android:src="@drawable/terug_knop" />
-
-        <ImageView
-            android:id="@+id/sosImageView"
-            android:layout_width="195dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="0dp"
-            android:src="@drawable/sos"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

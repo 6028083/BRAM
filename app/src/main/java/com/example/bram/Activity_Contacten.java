@@ -14,7 +14,6 @@ public class Activity_Contacten extends AppCompatActivity {
 
     private ImageView sosImageView;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +32,7 @@ public class Activity_Contacten extends AppCompatActivity {
         sosImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Activity_Contacten.this, EditContactDoktorActivity.class); // Vervang "NieuwePagina" door de naam van je gewenste nieuwe pagina-activiteit
+                Intent intent = new Intent(Activity_Contacten.this, EditContactDoktorActivity.class);
                 startActivity(intent);
             }
         });
@@ -51,5 +50,8 @@ public class Activity_Contacten extends AppCompatActivity {
         // Perform navigation to EditContactDoktorActivity
         Intent intent = new Intent(Activity_Contacten.this, EditContactDoktorActivity.class);
         startActivity(intent);
+    }
+
+    public void onDokterTextViewClick(View view) {
     }
 }

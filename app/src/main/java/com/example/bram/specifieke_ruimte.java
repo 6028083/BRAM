@@ -16,8 +16,9 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
+import android.widget.FrameLayout;
 
-public class lichten_toilet extends AppCompatActivity {
+public class specifieke_ruimte extends AppCompatActivity {
 
     private Switch switchButton_1;
     private ImageView imageView_1;
@@ -36,19 +37,37 @@ public class lichten_toilet extends AppCompatActivity {
 
     private Switch switchButton_6;
     private ImageView imageView_6;
-    private ImageView sosImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lichten_toilet);
+        setContentView(R.layout.activity_specifieke_ruimte);
 
         ImageView terug = findViewById(R.id.terug_knop);
-
         terug.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(lichten_toilet.this, MainActivity.class);
+                Intent intent = new Intent(specifieke_ruimte.this, ruimtes.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView sosImageView = findViewById(R.id.sosImageView);
+
+        sosImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(specifieke_ruimte.this, EditContactDoktorActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        FrameLayout  kleurtoon = findViewById(R.id.woonkamerPagina);
+        kleurtoon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(specifieke_ruimte.this, kleurtoon.class);
                 startActivity(intent);
             }
         });
@@ -71,14 +90,6 @@ public class lichten_toilet extends AppCompatActivity {
         switchButton_6 = findViewById(R.id.switch_button_6);
         imageView_6 = findViewById(R.id.image_view_6);
 
-        sosImageView = findViewById(R.id.sosImageView);
-        sosImageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(lichten_toilet.this, EditContactDoktorActivity.class); // Vervang "NieuwePagina" door de naam van je gewenste nieuwe pagina-activiteit
-                startActivity(intent);
-            }
-        });
         switchButton_1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

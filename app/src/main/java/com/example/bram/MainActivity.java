@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Start the new activity
-                Intent intent = new Intent(MainActivity.this, lichten_toilet.class);
+                Intent intent = new Intent(MainActivity.this, ruimtes.class);
                 startActivity(intent);
             }
         });
@@ -93,15 +93,12 @@ public class MainActivity extends AppCompatActivity {
         updateTimeRunnable = new Runnable() {
             @Override
             public void run() {
-                // Get the current time
                 Calendar calendar = Calendar.getInstance();
                 @SuppressLint("SimpleDateFormat") SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
                 String currentTime = timeFormat.format(calendar.getTime());
 
-                // Update the TextView with the current time
                 timeTextView.setText(currentTime);
 
-                // Schedule the next update after 1 second (1000 milliseconds)
                 handler.postDelayed(this, 1000);
             }
         };
@@ -109,21 +106,18 @@ public class MainActivity extends AppCompatActivity {
         updateDateRunnable = new Runnable() {
             @Override
             public void run() {
-                // Get the current date
                 Calendar calendar = Calendar.getInstance();
                 SimpleDateFormat dateFormat = new SimpleDateFormat("dd MMMM yyyy", new Locale("nl", "NL"));
                 String currentDate = dateFormat.format(calendar.getTime());
 
-                // Update the TextView with the current date
                 dateTextView.setText(currentDate);
 
-                // Schedule the next update after 1 second (1000 milliseconds)
                 handler.postDelayed(this, 1000);
             }
         };
 
-        // Start the initial updates for time and date
         handler.post(updateTimeRunnable);
         handler.post(updateDateRunnable);
     }
 }
+

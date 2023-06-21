@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewContact">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/achtergrond"
+        android:src="@drawable/costum_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/logo_van_mijn_app"
+        android:src="@drawable/bram_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:layout_width="450dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="313dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nieuw_text"
+            android:textColor="#2B669B"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/nieuw"/>
+
+        <ImageView
+            android:id="@+id/img_npc"
+            android:layout_width="174dp"
+            android:layout_height="174dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/img_npc"
+            android:contentDescription="@string/doctor"/>
+
+        <TextView
+            android:id="@+id/voegtoe_text"
+            android:textColor="#2B669B"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="200dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="230dp"
+            android:text="@string/voeg_foto_toe"/>
+
+        <TextView
+            android:id="@+id/gereed_text"
+            android:textColor="#2B669B"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="100dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="360dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/gereed"/>
+    </FrameLayout>
+
+
+
+
+    <FrameLayout
+        android:layout_width="640dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="447dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/naam_text"
+            android:layout_width="243dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/naam"
+            android:textColor="#2B669B"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="640dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="547dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <View
+            android:layout_width="580dp"
+            android:layout_height="2.5dp"
+            android:background="#707070"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:id="@+id/email_text"
+            android:layout_width="243dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/email"
+            android:textColor="#2B669B"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="640dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="647dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="580dp"
+            android:layout_height="2.5dp"
+            android:background="#707070"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/groep_text"
+            android:layout_width="243dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/groep"
+            android:textColor="#2B669B"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="640dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="847dp"
+        android:background="@drawable/square_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/plus_knop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/add_knop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/toevoegknop" />
+
+        <TextView
+            android:id="@+id/telefoonnummer_text"
+            android:layout_width="600dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/telefoonnummer"
+            android:textColor="#2B669B"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="1030dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/terug_knop"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/pijl_naar_links"
+            android:src="@drawable/terug_knop" />
+
+        <ImageView
+            android:id="@+id/sosImageView"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/sos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/sosknop" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

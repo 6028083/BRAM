@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="Achtergrond"
+        android:contentDescription="@string/achtergronds"
         android:src="@drawable/costum_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,7 +21,7 @@
         android:layout_height="125dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="10dp"
-        android:contentDescription="Logo van mijn app"
+        android:contentDescription="@string/logo_van_mijn_app"
         android:src="@drawable/bram_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -39,29 +39,29 @@
             android:layout_width="174dp"
             android:layout_height="174dp"
             android:src="@drawable/doctor"
-            android:contentDescription="Doctor"/>
+            android:contentDescription="@string/doctortje"/>
 
         <TextView
             android:id="@+id/doctor_text"
             android:textColor="#2B669B"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_width="100dp"
             android:layout_height="62dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="170dp"
-            android:text="Doctor"/>
+            android:text="@string/doctortjes"/>
 
         <TextView
             android:id="@+id/wijzig_text"
             android:textColor="#2B669B"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_width="100dp"
             android:layout_height="62dp"
             android:layout_marginStart="360dp"
             android:layout_marginTop="30dp"
-            android:text="Wijzig"/>
+            android:text="@string/wijzig"/>
     </FrameLayout>
 
 
@@ -80,7 +80,7 @@
             android:layout_height="85dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="15dp"
-            android:contentDescription="Foto van een bericht"
+            android:contentDescription="@string/foto_van_een_bericht"
             android:src="@drawable/bericht_icoon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -88,13 +88,13 @@
         <TextView
             android:id="@+id/bericht_text"
             android:textColor="#2B669B"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_width="100dp"
             android:layout_height="62dp"
             android:layout_marginStart="60dp"
             android:layout_marginTop="100dp"
-            android:text="Bericht"/>
+            android:text="@string/bericht"/>
 
 
     </FrameLayout>
@@ -114,7 +114,7 @@
             android:layout_height="85dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="15dp"
-            android:contentDescription="Foto van een mobile"
+            android:contentDescription="@string/foto_van_een_mobile"
             android:src="@drawable/mobile_icoon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -122,13 +122,13 @@
         <TextView
             android:id="@+id/mobile_text"
             android:textColor="#2B669B"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_width="100dp"
             android:layout_height="62dp"
             android:layout_marginStart="65dp"
             android:layout_marginTop="100dp"
-            android:text="Bellen"/>
+            android:text="@string/bellen"/>
     </FrameLayout>
 
     <FrameLayout
@@ -146,7 +146,7 @@
             android:layout_height="85dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="15dp"
-            android:contentDescription="Foto van een mobile"
+            android:contentDescription="@string/foto_van_een_mobiles"
             android:src="@drawable/facetime_icoon"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -154,13 +154,13 @@
         <TextView
             android:id="@+id/facetime_text"
             android:textColor="#2B669B"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_width="110dp"
             android:layout_height="62dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="100dp"
-            android:text="Facetime"/>
+            android:text="@string/facetime"/>
     </FrameLayout>
 
     <FrameLayout
@@ -176,23 +176,23 @@
             android:id="@+id/telefoonnummer_text"
             android:layout_width="243dp"
             android:layout_height="62dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            android:text="Telefoonnummer:"
+            android:text="@string/telefoonnummers"
             android:textColor="#2B669B"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/telefoonnummer_text2"
             android:textColor="#2B669B"
-            android:textSize="35dp"
+            android:textSize="35sp"
             android:textStyle="bold"
             android:layout_width="200dp"
             android:layout_height="62dp"
             android:layout_marginTop="45dp"
-            android:layout_marginLeft="15dp"
-            android:text="0636644876"/>
+            android:layout_marginStart="15dp"
+            android:text="@string/_0636644876"/>
     </FrameLayout>
 
     <FrameLayout
@@ -207,13 +207,13 @@
         <TextView
             android:id="@+id/familie_text"
             android:textColor="#2B669B"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_width="200dp"
             android:layout_height="62dp"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="Zet in familie"/>
+            android:layout_marginStart="15dp"
+            android:text="@string/zet_in_familie"/>
     </FrameLayout>
 
     <FrameLayout
@@ -228,13 +228,13 @@
         <TextView
             android:id="@+id/belangrijk_text"
             android:textColor="#2B669B"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_width="200dp"
             android:layout_height="62dp"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="Zet in belangrijk"/>
+            android:layout_marginStart="15dp"
+            android:text="@string/zet_in_belangrijk"/>
     </FrameLayout>
 
     <FrameLayout
@@ -249,13 +249,13 @@
         <TextView
             android:id="@+id/favoriete_text"
             android:textColor="#2B669B"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_width="200dp"
             android:layout_height="62dp"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="Zet in favoriete"/>
+            android:layout_marginStart="15dp"
+            android:text="@string/zet_in_favoriete"/>
     </FrameLayout>
 
     <FrameLayout
@@ -270,13 +270,13 @@
         <TextView
             android:id="@+id/locatie_text"
             android:textColor="#2B669B"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_width="200dp"
             android:layout_height="62dp"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="Deel mijn locatie"/>
+            android:layout_marginStart="15dp"
+            android:text="@string/deel_mijn_locatie"/>
     </FrameLayout>
 
     <FrameLayout
@@ -291,13 +291,13 @@
         <TextView
             android:id="@+id/blokkeer_text"
             android:textColor="#F83737"
-            android:textSize="25dp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:layout_width="300dp"
             android:layout_height="62dp"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="15dp"
-            android:text="Blokkeer deze beller"/>
+            android:layout_marginStart="15dp"
+            android:text="@string/blokkeer_deze_beller"/>
     </FrameLayout>
     <LinearLayout
         android:layout_width="800dp"
@@ -310,22 +310,21 @@
             android:id="@+id/terug_knop"
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="10dp"
-        android:contentDescription="Pijl naar links"
+        android:contentDescription="@string/pijl_naar_linksj"
         android:src="@drawable/terug_knop" />
 
         <ImageView
             android:id="@+id/sosImageView"
             android:layout_width="195dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
             android:layout_marginTop="0dp"
             android:src="@drawable/sos"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/sosknop" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

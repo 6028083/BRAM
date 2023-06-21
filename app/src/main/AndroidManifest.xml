@@ -15,19 +15,15 @@
         android:theme="@style/Theme.BRAM"
         tools:targetApi="31">
         <activity
-            android:name=".lichten_slaapkamer"
+            android:name=".AddNewContact"
             android:exported="false" />
-        <activity
-            android:name=".EditContactDoktorActivity"/>
-<activity
-            android:name=".fotoalbum"
-            android:exported="false" />
-        <activity
-            android:name=".lichten_toilet"
-            android:exported="false" />
-        <activity
-            android:name=".Activity_Contacten"
-            android:exported="false" />
+        <activity android:name=".lichten_slaapkamer" />
+        <activity android:name=".kleurtoon" />
+        <activity android:name=".ruimtes" />
+        <activity android:name=".specifieke_ruimte" />
+        <activity android:name=".EditContactDoktorActivity" />
+        <activity android:name=".Activity_Contacten" />
+        <activity android:name=".fotoalbum" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

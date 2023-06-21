@@ -8,21 +8,20 @@
     tools:context=".lichten_slaapkamer">
 
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="Achtergrond"
+        android:contentDescription="@string/achtergrond"
         android:src="@drawable/costum_background"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Verwarming"
+        android:text="@string/verwarming"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +39,7 @@
         android:layout_alignParentTop="false"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:contentDescription="Logo van mijn app"
+        android:contentDescription="@string/logo_van_mijn_app"
         android:src="@drawable/bram_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -77,9 +76,10 @@
                 android:layout_gravity="center_horizontal|left"
                 android:layout_marginTop="150dp"
                 android:layout_marginLeft="40dp"
-                android:text="Woonkamer"
+                android:text="@string/woonkamer"
                 android:textSize="35sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
 
 
 
@@ -89,9 +89,10 @@
                 android:layout_gravity="center_horizontal|left"
                 android:layout_marginStart="170dp"
                 android:layout_marginTop="30dp"
-                android:text="23°C"
-                android:textSize="90px"
-                android:textStyle="bold"/>
+                android:text="@string/_23_c"
+                android:textSize="90sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
 
 
 
@@ -100,9 +101,9 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:src="@drawable/thermometer_home"
-                />
+                android:contentDescription="@string/thermo" />
 
 
 
@@ -111,11 +112,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|right"
-                android:layout_marginRight="100dp"
+                android:layout_marginEnd="100dp"
                 android:layout_marginTop="110dp"
                 android:checked="false"
                 android:scaleX="3"
-                android:scaleY="3"/>
+                android:scaleY="3"
+                tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
 
 
 
@@ -135,19 +137,14 @@
                     android:id="@+id/minusButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="100dp"
+                    android:layout_marginEnd="100dp"
                     android:backgroundTint="#E9F0FF"
                     android:paddingStart="16dp"
                     android:paddingEnd="16dp"
                     android:text="-"
                     android:textColor="#A1CBB7"
-                    android:textSize="24px"
-
-
-
-                    />
-
-
+                    android:textSize="24sp"
+                    tools:ignore="ButtonStyle,HardcodedText" />
 
                 <Button
                     android:id="@+id/plusButton"
@@ -158,7 +155,8 @@
                     android:paddingStart="16dp"
                     android:paddingEnd="16dp"
                     android:backgroundTint="#E9F0FF"
-                    android:textColor="#A1CBB7" />
+                    android:textColor="#A1CBB7"
+                    tools:ignore="ButtonStyle,HardcodedText" />
 
 
 
@@ -185,10 +183,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|left"
                 android:layout_marginTop="150dp"
-                android:layout_marginLeft="40dp"
-                android:text="Slaapkamer"
+                android:layout_marginStart="40dp"
+                android:text="@string/slaapkamer"
                 android:textSize="35sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
 
 
 
@@ -198,9 +197,10 @@
                 android:layout_gravity="center_horizontal|left"
                 android:layout_marginStart="170dp"
                 android:layout_marginTop="30dp"
-                android:text="99°C"
-                android:textSize="90px"
-                android:textStyle="bold"/>
+                android:text="@string/_99_c"
+                android:textSize="90sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
 
 
             <ImageView
@@ -208,9 +208,9 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:src="@drawable/thermometer_home"
-                />
+                android:contentDescription="@string/thermo" />
 
             <Switch
                 android:id="@+id/slaapkamer_button"
@@ -221,7 +221,8 @@
                 android:layout_marginTop="110dp"
                 android:checked="false"
                 android:scaleX="3"
-                android:scaleY="3"/>
+                android:scaleY="3"
+                tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
 
 
 
@@ -247,11 +248,8 @@
                     android:paddingEnd="16dp"
                     android:backgroundTint="#E9F0FF"
                     android:textColor="#A1CBB7"
-                    android:layout_marginRight="100dp"
-
-
-
-                    />
+                    android:layout_marginEnd="100dp"
+                    tools:ignore="ButtonStyle,HardcodedText" />
 
 
 
@@ -264,7 +262,8 @@
                     android:paddingStart="16dp"
                     android:paddingEnd="16dp"
                     android:backgroundTint="#E9F0FF"
-                    android:textColor="#A1CBB7" />
+                    android:textColor="#A1CBB7"
+                    tools:ignore="ButtonStyle,HardcodedText" />
 
 
 
@@ -291,10 +290,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|left"
                 android:layout_marginTop="150dp"
-                android:layout_marginLeft="40dp"
-                android:text="Toilet"
+                android:layout_marginStart="40dp"
+                android:text="@string/toilet"
                 android:textSize="35sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
 
 
 
@@ -304,9 +304,10 @@
                 android:layout_gravity="center_horizontal|left"
                 android:layout_marginStart="170dp"
                 android:layout_marginTop="30dp"
-                android:text="28°C"
-                android:textSize="90px"
-                android:textStyle="bold"/>
+                android:text="@string/_28_c"
+                android:textSize="90sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
 
 
 
@@ -315,9 +316,9 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:src="@drawable/thermometer_home"
-                />
+                android:contentDescription="@string/thermo" />
 
 
 
@@ -326,11 +327,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|right"
-                android:layout_marginRight="100dp"
+                android:layout_marginEnd="100dp"
                 android:layout_marginTop="110dp"
                 android:checked="false"
                 android:scaleX="3"
-                android:scaleY="3"/>
+                android:scaleY="3"
+                tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
 
 
 
@@ -356,11 +358,8 @@
                     android:paddingEnd="16dp"
                     android:backgroundTint="#E9F0FF"
                     android:textColor="#A1CBB7"
-                    android:layout_marginRight="100dp"
-
-
-
-                    />
+                    android:layout_marginEnd="100dp"
+                    tools:ignore="ButtonStyle,HardcodedText" />
 
 
 
@@ -373,7 +372,8 @@
                     android:paddingStart="16dp"
                     android:paddingEnd="16dp"
                     android:backgroundTint="#E9F0FF"
-                    android:textColor="#A1CBB7" />
+                    android:textColor="#A1CBB7"
+                    tools:ignore="ButtonStyle,HardcodedText" />
 
 
 
@@ -394,22 +394,21 @@
             android:id="@+id/terug_knop"
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:layout_marginLeft="100dp"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="10dp"
-            android:contentDescription="Pijl naar links"
+            android:contentDescription="@string/pijl_naar_links"
             android:src="@drawable/terug_knop" />
 
         <ImageView
             android:id="@+id/sosImageView"
             android:layout_width="195dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
             android:layout_marginTop="0dp"
             android:src="@drawable/sos"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/sosknop" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

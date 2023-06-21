@@ -45,7 +45,7 @@ public class fotoalbum extends Activity {
         sosImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(fotoalbum.this, EditContactDoktorActivity.class); // Vervang "NieuwePagina" door de naam van je gewenste nieuwe pagina-activiteit
+                Intent intent = new Intent(fotoalbum.this, EditContactDoktorActivity.class);
                 startActivity(intent);
             }
         });
@@ -59,7 +59,6 @@ public class fotoalbum extends Activity {
         });
     }
 
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -67,13 +66,10 @@ public class fotoalbum extends Activity {
             Uri selectedImage = data.getData();
             if (selectedImage != null) {
                 try {
-                    // Get the bitmap from the URI
                     BitmapFactory.Options options = new BitmapFactory.Options();
                     options.inPreferredConfig = Bitmap.Config.ARGB_8888;
                     Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(selectedImage), null, options);
 
-                    // Save the bitmap to your photo album or perform any other desired actions
-                    // Here, you can add the bitmap to your photo album or display it in an ImageView
                     photoAlbumImageView.setImageBitmap(bitmap);
                 } catch (Exception e) {
                     e.printStackTrace();
