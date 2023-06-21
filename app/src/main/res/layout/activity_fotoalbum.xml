@@ -50,6 +50,17 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="25dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="25dp"
+        android:text="Fotoalbum"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/logoImageView"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
     <ImageView
         android:id="@+id/plus_knop"
         android:layout_width="100dp"

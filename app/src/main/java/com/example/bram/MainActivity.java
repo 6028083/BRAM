@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Start the new activity
-                Intent intent = new Intent(MainActivity.this, lichten_toilet.class);
+                Intent intent = new Intent(MainActivity.this, ruimtes.class);
                 startActivity(intent);
             }
         });
@@ -117,3 +117,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
