@@ -18,9 +18,8 @@
             android:name=".lichten_slaapkamer"
             android:exported="false" />
         <activity
-            android:name=".EditContactDoktorActivity"
-            android:exported="false" />
-        <activity
+            android:name=".EditContactDoktorActivity"/>
+<activity
             android:name=".fotoalbum"
             android:exported="false" />
         <activity

@@ -1,6 +1,8 @@
 package com.example.bram;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.CompoundButton;
 import android.widget.FrameLayout;
@@ -93,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 // Get the current time
                 Calendar calendar = Calendar.getInstance();
-                SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
+                @SuppressLint("SimpleDateFormat") SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
                 String currentTime = timeFormat.format(calendar.getTime());
 
                 // Update the TextView with the current time

@@ -1,26 +1,40 @@
 package com.example.bram;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.cardview.widget.CardView;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Switch;
 
 public class lichten_toilet extends AppCompatActivity {
+
     private Switch switchButton_1;
-    private Switch switchButton_2;
-    private Switch switchButton_3;
-    private Switch switchButton_4;
-    private Switch switchButton_5;
-    private Switch switchButton_6;
     private ImageView imageView_1;
+
+    private Switch switchButton_2;
     private ImageView imageView_2;
+
+    private Switch switchButton_3;
     private ImageView imageView_3;
+
+    private Switch switchButton_4;
     private ImageView imageView_4;
+
+    private Switch switchButton_5;
     private ImageView imageView_5;
+
+    private Switch switchButton_6;
     private ImageView imageView_6;
     private ImageView sosImageView;
 
@@ -65,14 +79,13 @@ public class lichten_toilet extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         switchButton_1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    imageView_1.setImageResource(R.drawable.lamp_aan); // Set the new image resource when the switch is checked
+                    imageView_1.setImageResource(R.drawable.lamp_aan);
                 } else {
-                    imageView_1.setImageResource(R.drawable.lamp_uit); // Set the default image resource when the switch is unchecked
+                    imageView_1.setImageResource(R.drawable.lamp_uit);
                 }
             }
         });
@@ -80,53 +93,49 @@ public class lichten_toilet extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    imageView_2.setImageResource(R.drawable.lamp_aan); // Set the new image resource when the switch is checked
+                    imageView_2.setImageResource(R.drawable.lamp_aan);
                 } else {
-                    imageView_2.setImageResource(R.drawable.lamp_uit); // Set the default image resource when the switch is unchecked
+                    imageView_2.setImageResource(R.drawable.lamp_uit);
                 }
             }
         });
-
         switchButton_3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    imageView_3.setImageResource(R.drawable.lamp_aan); // Set the new image resource when the switch is checked
+                    imageView_3.setImageResource(R.drawable.lamp_aan);
                 } else {
-                    imageView_3.setImageResource(R.drawable.lamp_uit); // Set the default image resource when the switch is unchecked
+                    imageView_3.setImageResource(R.drawable.lamp_uit);
                 }
             }
         });
-
         switchButton_4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    imageView_4.setImageResource(R.drawable.lamp_aan); // Set the new image resource when the switch is checked
+                    imageView_4.setImageResource(R.drawable.lamp_aan);
                 } else {
-                    imageView_4.setImageResource(R.drawable.lamp_uit); // Set the default image resource when the switch is unchecked
+                    imageView_4.setImageResource(R.drawable.lamp_uit);
                 }
             }
         });
-
         switchButton_5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    imageView_5.setImageResource(R.drawable.lamp_aan); // Set the new image resource when the switch is checked
+                    imageView_5.setImageResource(R.drawable.lamp_aan);
                 } else {
-                    imageView_5.setImageResource(R.drawable.lamp_uit); // Set the default image resource when the switch is unchecked
+                    imageView_5.setImageResource(R.drawable.lamp_uit);
                 }
             }
         });
-
         switchButton_6.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    imageView_6.setImageResource(R.drawable.lamp_aan); // Set the new image resource when the switch is checked
+                    imageView_6.setImageResource(R.drawable.lamp_aan);
                 } else {
-                    imageView_6.setImageResource(R.drawable.lamp_uit); // Set the default image resource when the switch is unchecked
+                    imageView_6.setImageResource(R.drawable.lamp_uit);
                 }
             }
         });
