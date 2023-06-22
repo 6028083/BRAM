@@ -120,14 +120,15 @@
                 android:textStyle="bold"
                 android:textColor="#2B669B"/>
 
-            <Switch
-                android:layout_width="wrap_content"
+            <SeekBar
+                android:id="@+id/slider"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|center_vertical"
-                android:checked="false"
-                android:scaleX="3"
-                android:scaleY="3"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
+                android:layout_marginRight="50dp"
+                android:progress="70"
+                android:scaleX="4"
+                android:scaleY="4"/>
 
         </FrameLayout>
 
@@ -150,14 +151,15 @@
                 android:textStyle="bold"
                 android:textColor="#2B669B"/>
 
-            <Switch
-                android:layout_width="wrap_content"
+            <SeekBar
+                android:id="@+id/slider_1"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|center_vertical"
-                android:checked="false"
-                android:scaleX="3"
-                android:scaleY="3"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
+                android:layout_marginRight="50dp"
+                android:progress="70"
+                android:scaleX="4"
+                android:scaleY="4"/>
 
         </FrameLayout>
 
@@ -179,14 +181,15 @@
                 android:textStyle="bold"
                 android:textColor="#2B669B"/>
 
-            <Switch
-                android:layout_width="wrap_content"
+            <SeekBar
+                android:id="@+id/slider_2"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end|center_vertical"
-                android:checked="false"
-                android:scaleX="3"
-                android:scaleY="3"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
+                android:layout_marginRight="50dp"
+                android:progress="70"
+                android:scaleX="4"
+                android:scaleY="4"/>
 
         </FrameLayout>
 
