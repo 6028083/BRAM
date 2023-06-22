@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,30 +7,37 @@
     android:layout_height="match_parent"
     tools:context=".Activity_Contacten">
 
-    <LinearLayout
+
+
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:contentDescription="@string/achtergrondtj"
+        android:src="@drawable/costum_background"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/logoImageView"-->
-<!--            android:layout_width="125dp"-->
-<!--            android:layout_height="125dp"-->
-<!--            android:layout_marginStart="4dp"-->
-<!--            android:layout_marginTop="10dp"-->
-<!--            android:contentDescription="Logo van mijn app"-->
-<!--            android:src="@drawable/bram_logo"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/logo_van_mijn_appje"
+        android:src="@drawable/bram_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:contentDescription="Achtergrond"-->
-<!--            android:src="@drawable/costum_background"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+    <ImageView
+        android:id="@+id/plus_knop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/add_knop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/toevoegknop" />
 
         <!-- Belangrijk sectie -->
     <LinearLayout
@@ -92,45 +99,7 @@
                 android:src="@drawable/mobile_icoon" />
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2.5dp"
-            android:background="#707070"
-            android:layout_marginStart="50dp"/>
 
-
-        <!-- Thuiszorgorganisaties -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="25dp">
-
-            <ImageView
-                android:id="@+id/thuiszorgImageView"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/doctor"
-                android:contentDescription="@string/doctorse" />
-
-            <TextView
-                android:id="@+id/thuiszorgorganisatiesTextView"
-                android:layout_width="640dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/thuiszorgorganisaties"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/mobile_icoon_thuiszorgorganisaties"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:contentDescription="@string/whatsapp_icons"
-                android:src="@drawable/mobile_icoon" />
-
-        </LinearLayout>
 
         <View
             android:layout_width="match_parent"
@@ -157,7 +126,7 @@
             <TextView
                 android:id="@+id/dokterTextView"
                 android:layout_width="640dp"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:padding="8dp"
                 android:text="@string/dokter"
                 android:textSize="20sp"
@@ -214,54 +183,6 @@
             android:layout_height="2.5dp"
             android:background="#707070"
             android:layout_marginStart="50dp"/>
-
-
-        <!-- Soon -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="25dp">
-
-            <TextView
-                android:id="@+id/kleinzoonTextView"
-                android:layout_width="643dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/kleinzoon"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/dochterImageView"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/kind"
-                android:contentDescription="@string/kind" />
-
-            <TextView
-                android:id="@+id/dochterTextView"
-                android:layout_width="642dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/dochter"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/mobile_icoon_Dochter"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/mobile_icoon"
-                android:contentDescription="@string/mobile_icons"
-                android:layout_gravity="end"/>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2.5dp"
-            android:background="#707070"
-            android:layout_marginStart="50dp"/>
-
 
         <!-- Huwelijkspartner -->
         <LinearLayout
@@ -379,9 +300,15 @@
                 android:id="@+id/kleinzoonImageView"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/man"
+                android:src="@drawable/kind"
                 android:contentDescription="@string/kleinzoons" />
-
+            <TextView
+                android:id="@+id/kleinzoonTextView"
+                android:layout_width="642dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/Kleinzoon"
+                android:textSize="20sp" />
             <ImageView
                 android:id="@+id/mobile_icoon_Kleinzoon"
                 android:layout_width="50dp"
@@ -390,153 +317,37 @@
                 android:src="@drawable/mobile_icoon"
                 android:contentDescription="@string/mobile_icontje"
                 android:layout_gravity="end"/>
-        </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2.5dp"
-            android:background="#707070"
-            android:layout_marginStart="50dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Overige sectie -->
-    <LinearLayout
-        android:id="@+id/overigeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/familieLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp">
 
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="#707070"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="15dp"
-            android:text="@string/overige"
-            android:textSize="34sp"
-            android:padding="8dp"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2.5dp"
-            android:background="#707070"
-            android:layout_marginStart="50dp"/>
-
-        <!-- Buurvrouw -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="25dp">
-
-            <ImageView
-                android:id="@+id/buurvrouwImageView"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/man"
-                android:contentDescription="@string/buurman" />
-
-            <TextView
-                android:id="@+id/buurvrouwTextView"
-                android:layout_width="642dp"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="@string/buurmans"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:id="@+id/mobile_icoon_Buurman"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/mobile_icoon"
-                android:contentDescription="@string/mobile_iconjes"
-                android:layout_gravity="end"/>
-        </LinearLayout>
-
-        <View
-            android:layout_width="805dp"
-            android:layout_height="2.5dp"
-            android:background="#707070"
-            android:layout_marginStart="50dp"/>
-
-        <LinearLayout
-            android:layout_width="800dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/terug_knop"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="10dp"
-                android:contentDescription="@string/pijl_naar_linkss"
-                android:src="@drawable/terug_knop"
-                tools:ignore="HardcodedText" />
-
-            <ImageView
-                android:id="@+id/sosImageView"
-                android:layout_width="195dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="80dp"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/sos"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:contentDescription="@string/sosknop" />
-        </LinearLayout>
-    </LinearLayout>
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/achtergrondd"
-            android:background="@drawable/costum_background" />
 
         <ImageView
-            android:id="@+id/logoImageView"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:contentDescription="@string/logo_van_mijn_appj"
-            android:src="@drawable/bram_logo"
+            android:id="@+id/terug_knop"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal|fill_horizontal"
+            android:contentDescription="@string/pijl_naar_links"
+            android:src="@drawable/terug_knop"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="25dp" />
 
-
-        <TextView
+        <ImageView
+            android:id="@+id/sosImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="25dp"
-            android:text="@string/ruimtes"
-            android:textSize="70sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/logoImageView"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginStart="85dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/sos"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/terug_knop"
+            android:contentDescription="@string/sosknop" />
 
-        <ImageView
-            android:id="@+id/plus_knop"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/add_knop"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/plusje" />
-    </LinearLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

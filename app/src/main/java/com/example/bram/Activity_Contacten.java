@@ -44,6 +44,15 @@ public class Activity_Contacten extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ImageView addImageView = findViewById(R.id.plus_knop);
+        addImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Activity_Contacten.this, AddNewContact.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void onDokterTextViewClick() {

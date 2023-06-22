@@ -134,25 +134,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|right"
-                    android:layout_marginTop="150dp"
-                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="45dp"
                     android:checked="false"
                     android:scaleX="3"
                     android:scaleY="3"
                     tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
-
-                <Switch
-                    android:id="@+id/switch_woonkamer_groot"
-                    android:layout_width="wrap_content"
+                <SeekBar
+                    android:id="@+id/slider"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:layout_marginTop="100dp"
-                    android:layout_marginBottom="25dp"
-                    android:checked="false"
-                    android:scaleX="3"
-                    android:scaleY="3"
-                    tools:ignore="UseSwitchCompatOrMaterialXml" />
-
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="370dp"
+                    android:progress="70"
+                    android:scaleX="4"
+                    android:scaleY="4"/>
             </FrameLayout>
 
         </LinearLayout>
@@ -205,24 +201,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|right"
-                    android:layout_marginTop="150dp"
-                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="45dp"
                     android:checked="false"
                     android:scaleX="3"
                     android:scaleY="3"
                     tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
 
-                <Switch
-                    android:id="@+id/switch_slaapkamer_groot"
-                    android:layout_width="wrap_content"
+                <SeekBar
+                    android:id="@+id/slider2"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:layout_marginTop="100dp"
-                    android:layout_marginBottom="25dp"
-                    android:checked="false"
-                    android:scaleX="3"
-                    android:scaleY="3"
-                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="370dp"
+                    android:progress="30"
+                    android:scaleX="4"
+                    android:scaleY="4"/>
             </FrameLayout>
 
         </LinearLayout>
@@ -274,24 +268,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal|right"
-                    android:layout_marginTop="150dp"
-                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="45dp"
                     android:checked="false"
                     android:scaleX="3"
                     android:scaleY="3"
                     tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
 
-                <Switch
-                    android:id="@+id/switch_toilet_groot"
-                    android:layout_width="wrap_content"
+                <SeekBar
+                    android:id="@+id/slider3"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:layout_marginTop="100dp"
-                    android:layout_marginBottom="25dp"
-                    android:checked="false"
-                    android:scaleX="3"
-                    android:scaleY="3"
-                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+                    android:layout_marginTop="200dp"
+                    android:layout_marginStart="370dp"
+                    android:progress="50"
+                    android:scaleX="4"
+                    android:scaleY="4"/>
+
             </FrameLayout>
 
         </LinearLayout>

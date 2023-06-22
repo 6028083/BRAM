@@ -258,32 +258,12 @@
             android:text="@string/zet_in_favoriete"/>
     </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="640dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="894dp"
-        android:background="@drawable/square_background"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/locatie_text"
-            android:textColor="#2B669B"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_width="200dp"
-            android:layout_height="62dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="15dp"
-            android:text="@string/deel_mijn_locatie"/>
-    </FrameLayout>
 
     <FrameLayout
         android:layout_width="640dp"
         android:layout_height="65dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="997dp"
+        android:layout_marginTop="897dp"
         android:background="@drawable/square_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -299,32 +279,30 @@
             android:layout_marginStart="15dp"
             android:text="@string/blokkeer_deze_beller"/>
     </FrameLayout>
-    <LinearLayout
-        android:layout_width="800dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="1060dp"
+    <ImageView
+        android:id="@+id/terug_knop"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:contentDescription="@string/pijl_naar_links"
+        android:src="@drawable/terug_knop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="25dp" />
 
-        <ImageView
-            android:id="@+id/terug_knop"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="10dp"
-        android:contentDescription="@string/pijl_naar_linksj"
-        android:src="@drawable/terug_knop" />
-
-        <ImageView
-            android:id="@+id/sosImageView"
-            android:layout_width="195dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="0dp"
-            android:src="@drawable/sos"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:contentDescription="@string/sosknop" />
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/sosImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/sos"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/terug_knop"
+        android:contentDescription="@string/sosknop" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

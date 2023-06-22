@@ -31,9 +31,6 @@
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="125dp"
-
-
-
         android:layout_height="125dp"
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="false"
@@ -47,7 +44,7 @@
 
     <LinearLayout
         android:layout_width="774dp"
-        android:layout_height="880dp"
+        android:layout_height="850dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="20dp"
@@ -63,7 +60,6 @@
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:gradientRadius="50dp"
             android:background="@drawable/square_background">
@@ -74,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|left"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="140dp"
                 android:layout_marginLeft="40dp"
                 android:text="@string/woonkamer"
                 android:textSize="35sp"
@@ -171,7 +167,6 @@
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:gradientRadius="50dp"
             android:background="@drawable/square_background">
@@ -182,7 +177,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|left"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="140dp"
                 android:layout_marginStart="40dp"
                 android:text="@string/slaapkamer"
                 android:textSize="35sp"
@@ -278,7 +273,6 @@
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:gradientRadius="50dp"
             android:background="@drawable/square_background">
@@ -289,7 +283,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|left"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="140dp"
                 android:layout_marginStart="40dp"
                 android:text="@string/toilet"
                 android:textSize="35sp"
@@ -383,32 +377,30 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="800dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="1060dp"
+    <ImageView
+        android:id="@+id/terug_knop"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:contentDescription="@string/pijl_naar_links"
+        android:src="@drawable/terug_knop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="25dp" />
 
-        <ImageView
-            android:id="@+id/terug_knop"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="10dp"
-            android:contentDescription="@string/pijl_naar_links"
-            android:src="@drawable/terug_knop" />
-
-        <ImageView
-            android:id="@+id/sosImageView"
-            android:layout_width="195dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="0dp"
-            android:src="@drawable/sos"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:contentDescription="@string/sosknop" />
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/sosImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/sos"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/terug_knop"
+        android:contentDescription="@string/sosknop" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
