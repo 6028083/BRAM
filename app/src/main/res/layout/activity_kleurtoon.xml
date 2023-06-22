@@ -32,9 +32,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="25dp"
-        android:text="@string/ruimtesje"
+        android:text="@string/aanpassen"
         android:textSize="70sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/logoImageView"
@@ -120,6 +120,16 @@
                 android:textStyle="bold"
                 android:textColor="#2B669B"/>
 
+            <ImageView
+                android:id="@+id/info_Kleurtoon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/image_woonkamer"
+                android:contentDescription="@string/info_icon"
+                android:src="@drawable/info_icon" />
+
             <SeekBar
                 android:id="@+id/slider"
                 android:layout_width="130dp"
@@ -170,7 +180,7 @@
             android:layout_marginRight="50dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-           android:background="@drawable/square_background">
+            android:background="@drawable/square_background">
 
             <TextView
                 android:layout_width="wrap_content"

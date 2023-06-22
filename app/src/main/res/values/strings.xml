@@ -96,4 +96,6 @@
     <string name="lamp_bij_bank">Lamp bij bank</string>
     <string name="lamp_gang">Lamp gang</string>
     <string name="Kleinzoon">Kleinzoon</string>
+    <string name="info_icon">info_icon</string>
+    <string name="aanpassen">Aanpassen</string>
 </resources>

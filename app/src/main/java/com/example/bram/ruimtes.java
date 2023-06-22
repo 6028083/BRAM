@@ -17,6 +17,7 @@ import com.example.bram.R;
 import android.graphics.Bitmap;
 import androidx.cardview.widget.CardView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class ruimtes extends AppCompatActivity {
 
@@ -68,5 +69,14 @@ public class ruimtes extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ImageView infoWoonkamer = findViewById(R.id.info_woonkamer);
+        infoWoonkamer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ruimtes.this, "Klik op het lampje om verder te gaan.", Toast.LENGTH_SHORT).show();
+            }
+
+        });
+
     }
 }

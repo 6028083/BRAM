@@ -39,7 +39,18 @@
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/toevoegknop" />
 
-        <!-- Belangrijk sectie -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/contacten"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/logoImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Belangrijk sectie -->
     <LinearLayout
         android:id="@+id/belangrijkLayout"
         android:layout_width="match_parent"
@@ -324,30 +335,30 @@
 
 
 
-        <ImageView
-            android:id="@+id/terug_knop"
-            android:layout_width="175dp"
-            android:layout_height="175dp"
-            android:layout_gravity="center_horizontal|fill_horizontal"
-            android:contentDescription="@string/pijl_naar_links"
-            android:src="@drawable/terug_knop"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="25dp"
-            android:layout_marginStart="25dp" />
+    <ImageView
+        android:id="@+id/terug_knop"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:contentDescription="@string/pijl_naar_links"
+        android:src="@drawable/terug_knop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="25dp" />
 
-        <ImageView
-            android:id="@+id/sosImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center_horizontal|center"
-            android:layout_marginStart="85dp"
-            android:layout_marginBottom="25dp"
-            android:src="@drawable/sos"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintStart_toEndOf="@+id/terug_knop"
-            android:contentDescription="@string/sosknop" />
+    <ImageView
+        android:id="@+id/sosImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/sos"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/terug_knop"
+        android:contentDescription="@string/sosknop" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

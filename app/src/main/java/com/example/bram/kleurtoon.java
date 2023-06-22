@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class kleurtoon extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,13 @@ public class kleurtoon extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ImageView infoKleurtoon = findViewById(R.id.info_Kleurtoon);
+        infoKleurtoon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(kleurtoon.this, "Sleep de balk om de helderheid aan te passen.", Toast.LENGTH_SHORT).show();
+            }
+
+        });
     }
 }
-

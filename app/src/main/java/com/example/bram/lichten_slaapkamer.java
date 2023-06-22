@@ -33,6 +33,7 @@ public class lichten_slaapkamer extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
 }
